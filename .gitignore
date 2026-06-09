@@ -18,3 +18,4 @@ venv/
 /.quarto/
 *_files/
 *_cache/
+.Rproj.user
