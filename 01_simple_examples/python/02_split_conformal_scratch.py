@@ -40,7 +40,7 @@ scores = np.abs(y_cal - pred_cal)
 
 # 5. Compute the conformal quantile
 n_cal = len(scores)
-q_hat = np.quantile(scores, np.ceil((n_cal + 1) * (1 - alpha)) / n_cal)
+q_hat = np.quantile(scores, np.ceil((n_cal + 1) * (1 - alpha)) / n_cal, method="higher")
 
 end_time = time.time()
 
